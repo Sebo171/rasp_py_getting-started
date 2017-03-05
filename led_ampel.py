@@ -16,7 +16,9 @@ GPIO.setup(green, GPIO.OUT)
 print "Starting"
 # loop through 50 times, on/of for 1 second
 for i in range(5):
+    
     GPIO.output(red,True)
+    time.sleep(1)
     GPIO.output(yellow,True)
     print "Red and Yellow on"
     time.sleep(1)
